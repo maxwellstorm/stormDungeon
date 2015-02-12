@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StormDugeon.Abilites.RangerAbilites;
 
-namespace StormDugeon
+namespace StormDugeon.Classes
 {
     class Ranger : CharacterClass
     {
@@ -18,6 +19,11 @@ namespace StormDugeon
             Speed = 5;
             Survivaiblty = 3;
         }
+
+        public new void SetAbilites()
+        {
+            this.StartingAbilities.Add(new BowStrike());
+        }//randomize starting abiltiies
 
     }
 }
