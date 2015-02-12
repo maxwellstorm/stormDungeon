@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace StormDugeon
 {
-    class Ability
+    abstract class Ability
     {
+        public CharacterClass ClassRequired { get; set; }
+        public string Decription { get; set; }
+        public bool HeroAbility { get; set; }
+        public int cost { get; set; }
+        
     }
 }

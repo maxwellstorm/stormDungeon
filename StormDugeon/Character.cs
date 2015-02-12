@@ -37,16 +37,40 @@ namespace StormDugeon
         private const double SurvivabiltyHealthModifier = .1;
 
 
-        public void SetStrength(int s)
+        public void IncreaseStrength()//increses strength by 1
         {
-            Strength = s;
-            Damage = Damage + (s * StrengthDamageModifier); //add 10% to damage for each strength point
+            Strength++;
+            Damage = Damage + (Damage * StrengthDamageModifier);
         }
 
-        public void SetSurvivabiltiy(int s)
+        public void DecreseStrength()//decreses strength by 1
         {
-            Survivaiblty = s;
-            Health = Health + (s * SurvivabiltyHealthModifier);
+            Strength--;
+            Damage = Damage - (Damage * StrengthDamageModifier);
+        }
+
+
+        public void IncreaseSurvivabiltiy()//increses survivabilty by 1
+        {
+            Survivaiblty++;
+            Health = Health + (Health * SurvivabiltyHealthModifier);
+        }
+
+
+        public void DecreaseSurvivabiltiy()//decreases survivabilty by 1
+        {
+            Survivaiblty--;
+            Health = Health - (Health * SurvivabiltyHealthModifier);
+        }
+
+        public void IncreaseArmour()
+        {
+            Armour++;
+        }
+
+        public void DecreaseArmour()
+        {
+            Armour--;
         }
 
 

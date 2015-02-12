@@ -7,3 +7,11 @@ C:\Users\wmswe_000\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.Proper
 C:\Users\wmswe_000\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.csproj.GenerateResource.Cache
 C:\Users\wmswe_000\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.exe
 C:\Users\wmswe_000\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.pdb
+C:\Users\Student\Desktop\stormDungeon\StormDugeon\bin\Debug\StormDugeon.exe.config
+C:\Users\Student\Desktop\stormDungeon\StormDugeon\bin\Debug\StormDugeon.exe
+C:\Users\Student\Desktop\stormDungeon\StormDugeon\bin\Debug\StormDugeon.pdb
+C:\Users\Student\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.Form1.resources
+C:\Users\Student\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.Properties.Resources.resources
+C:\Users\Student\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.csproj.GenerateResource.Cache
+C:\Users\Student\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.exe
+C:\Users\Student\Desktop\stormDungeon\StormDugeon\obj\Debug\StormDugeon.pdb

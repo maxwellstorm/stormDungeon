@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace StormDugeon
 {
-    interface CharacterClass//should this be a classor an interface?
+     abstract class CharacterClass//should this be a class or an interface?
     {
-         string className{ get; set;}
-         double Health{ get; set;}
-         string model { get; set; }
-         int Armour { get; set; }
-         double Damage { get; set; }
-         int Strength { get; set; }
-         int Intellegence { get; set; }
-         int Dextreity { get; set; }
-         int Survivaiblty { get; set; }
-         int Speed { get; set; }
-         List<Ability> StartingAbilities { get; set; }
-         void RandomizeAbilites();//randomize starting abiltiies
+         public string className{ get; set;}
+         public double Health { get; set; }
+         public string model { get; set; }
+         public double Damage { get; set; }
+         public int Strength { get; set; }
+         public int Intellegence { get; set; }
+         public int Dextreity { get; set; }
+         public int Survivaiblty { get; set; }
+         public int Speed { get; set; }
+         public List<Ability> StartingAbilities { get; set; }
+         public void RandomizeAbilites()
+         {
+         }//randomize starting abiltiies
         
     }
 }
