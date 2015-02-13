@@ -7,20 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using StormDugeon;
 
 namespace StormDugeon.Forms
 {
-    public partial class MainMenu : Form
+    public partial class Campaign : Form
     {
-        public MainMenu()
+        public Campaign()
         {
             InitializeComponent();
         }
 
-        private void NewGameBtn_Click(object sender, EventArgs e)
+        private void CancelBtn_Click(object sender, EventArgs e)
         {
-            Utils.OpenForm(new Campaign(), this);
+
+            Utils.OpenForm(new MainMenu(), this);
         }
     }
+   
 }

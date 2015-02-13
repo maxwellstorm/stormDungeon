@@ -21,11 +21,7 @@ namespace StormDugeon.Forms
 
         private void StartBtn_Click(object sender, EventArgs e)
         {
-            MainMenu mm = new MainMenu();
-            mm.MdiParent = this.MdiParent;
-            mm.Dock = DockStyle.Fill;
-            mm.Show();
-            this.Dispose();
+            Utils.OpenForm(new MainMenu(), this);
         }
     }
 }
