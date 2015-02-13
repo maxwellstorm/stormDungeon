@@ -1,4 +1,4 @@
-﻿namespace StormDugeon
+﻿namespace StormDugeon.Forms
 {
     partial class ContainerForm
     {

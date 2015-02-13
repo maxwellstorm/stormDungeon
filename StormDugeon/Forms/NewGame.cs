@@ -8,16 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StormDugeon
+namespace StormDugeon.Forms
 {
-    public partial class ContainerForm : Form
+    public partial class NewGame : Form
     {
-        public ContainerForm()
+        public NewGame()
         {
             InitializeComponent();
-            StartMenu sm = new StartMenu();
-            sm.MdiParent = this;
-            sm.Show();
         }
     }
 }

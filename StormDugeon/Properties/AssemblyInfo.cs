@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("StormDugeon")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Toshiba")]
+[assembly: AssemblyCompany("Storm Industries")]
 [assembly: AssemblyProduct("StormDugeon")]
-[assembly: AssemblyCopyright("Copyright © Toshiba 2015")]
+[assembly: AssemblyCopyright("Copyright © Storm Industries 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

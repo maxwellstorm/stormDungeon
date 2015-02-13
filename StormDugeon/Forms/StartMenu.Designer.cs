@@ -1,4 +1,4 @@
-﻿namespace StormDugeon
+﻿namespace StormDugeon.Forms
 {
     partial class StartMenu
     {
@@ -33,9 +33,7 @@
             // 
             // StartBtn
             // 
-            this.StartBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StartBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StartBtn.Location = new System.Drawing.Point(275, 165);
             this.StartBtn.Name = "StartBtn";
             this.StartBtn.Size = new System.Drawing.Size(263, 52);

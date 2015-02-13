@@ -49,22 +49,28 @@
     <Compile Include="Armour.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="CharacterClass.cs" />
-    <Compile Include="ContainerForm.cs">
+    <Compile Include="Forms\ContainerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ContainerForm.Designer.cs">
+    <Compile Include="Forms\ContainerForm.Designer.cs">
       <DependentUpon>ContainerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.cs">
+    <Compile Include="Forms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenu.Designer.cs">
+    <Compile Include="Forms\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="StartMenu.cs">
+    <Compile Include="Forms\NewGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StartMenu.Designer.cs">
+    <Compile Include="Forms\NewGame.Designer.cs">
+      <DependentUpon>NewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StartMenu.Designer.cs">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Perk.cs" />
@@ -72,13 +78,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Ranger.cs" />
     <Compile Include="Weapon.cs" />
-    <EmbeddedResource Include="ContainerForm.resx">
+    <EmbeddedResource Include="Forms\ContainerForm.resx">
       <DependentUpon>ContainerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
+    <EmbeddedResource Include="Forms\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StartMenu.resx">
+    <EmbeddedResource Include="Forms\NewGame.resx">
+      <DependentUpon>NewGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StartMenu.resx">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
