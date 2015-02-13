@@ -21,6 +21,7 @@ namespace StormDugeon
          public int Survivaiblty { get; set; }
          public int Speed { get; set; }
          public List<Ability> StartingAbilities { get; set; }
+         public List<Ability> availableAbilities { get; set; }
          public void SetAbilites()
          {
          }//randomize starting abiltiies
@@ -28,17 +29,22 @@ namespace StormDugeon
          public List<Ability> getAvaiableAbilities(string NamespaceName)
         {
           Assembly asm = Assembly.GetExecutingAssembly();
-          List<string> namespacelist = new List<string>();
-          List<string> classlist = new List<string>();
-          foreach (Type type in asm.GetTypes())
-            {
-                if (type.Namespace == NamespaceName)
-                    namespacelist.Add(type.Name);
-              
-            }
+          List<Ability> abs = new List<Ability>();
+          try
+          {
+              foreach (Type type in asm.GetTypes())
+              {
+                  if (type.Namespace == NamespaceName)
+                      abs.Add((Ability)type.GetConstructor(new Type[] { }).Invoke(new Type[] { }));
+              }
+          }
+          catch (Exception e)
+          {
+              Console.WriteLine(e.Message);
+              return null;
+          }
+          return abs;
 
-        foreach (string classname in namespacelist)
-            classlist.Add(classname);
         }
         
     }

@@ -18,12 +18,13 @@ namespace StormDugeon.Classes
             Intellegence = 1;
             Speed = 5;
             Survivaiblty = 3;
+            availableAbilities = getAvaiableAbilities("StormDugeon.Abilites.RangerAbilites");
         }
 
         public new void SetAbilites()
         {
-            this.StartingAbilities.Add(new BowStrike());
-        }//randomize starting abiltiies
+           this.StartingAbilities.Add(availableAbilities.ElementAt(0));
+        }//will randomize starting abiltiies
 
     }
 }
