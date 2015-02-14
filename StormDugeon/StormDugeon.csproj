@@ -103,6 +103,12 @@
     <Compile Include="Forms\StartMenu.Designer.cs">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserControls\NewLoadControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControls\NewLoadControl.Designer.cs">
+      <DependentUpon>NewLoadControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Perk.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,6 +139,9 @@
     <EmbeddedResource Include="Forms\StartMenu.resx">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControls\NewLoadControl.resx">
+      <DependentUpon>NewLoadControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -157,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Armour\" />
+    <Folder Include="SaveGames\" />
     <Folder Include="Weapons\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

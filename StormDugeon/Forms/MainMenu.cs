@@ -22,5 +22,12 @@ namespace StormDugeon.Forms
         {
             Utils.OpenForm(new Campaign(), this);
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace StormDugeon
 {
@@ -15,6 +16,27 @@ namespace StormDugeon
             FormToOpen.Dock = DockStyle.Fill;
             FormToOpen.Show();
             FormToClose.Dispose();
+        }
+
+        public static void MakeNewGameFile(string FileName)//file name without extension
+        {
+            string path = @"" + FileName + ".STORM"; //really is an xml file
+            try
+            {
+                XmlWriter writer = XmlWriter.Create(path);
+                writer.WriteStartDocument();
+                writer.WriteStartElement("Employees");
+                //writer.WriteElementString("test","this is a test");
+                //writer.WriteString("this is another test");
+                writer.WriteEndElement();              
+                writer.WriteEndDocument();
+                writer.Flush();
+                writer.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

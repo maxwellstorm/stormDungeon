@@ -21,5 +21,16 @@ namespace StormDugeon.Forms
             sm.Dock = DockStyle.Fill;
             sm.Show();
         }
+
+
+        public void StartNewGame(string GameName)
+        {
+            Utils.MakeNewGameFile(GameName);
+        }
+
+        public void LoadGame(string GameName)
+        {
+
+        }
     }
 }

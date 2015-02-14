@@ -30,7 +30,7 @@
         {
             this.NewGameBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NewGameBtn
@@ -54,15 +54,16 @@
             this.button3.Text = "Options";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // ExitBtn
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.Location = new System.Drawing.Point(266, 240);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(206, 40);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Exit to Desktop";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ExitBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ExitBtn.Location = new System.Drawing.Point(266, 240);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(206, 40);
+            this.ExitBtn.TabIndex = 4;
+            this.ExitBtn.Text = "Exit to Desktop";
+            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // MainMenu
             // 
@@ -70,7 +71,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(783, 421);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.NewGameBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -85,6 +86,6 @@
 
         private System.Windows.Forms.Button NewGameBtn;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button ExitBtn;
     }
 }
