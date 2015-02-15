@@ -28,9 +28,14 @@ namespace StormDugeon
                     Directory.CreateDirectory("SaveGames");
                 XmlWriter writer = XmlWriter.Create(path);
                 writer.WriteStartDocument();
-                writer.WriteStartElement("Employees");
-                //writer.WriteElementString("test","this is a test");
-                //writer.WriteString("this is another test");
+                writer.WriteStartElement("General");
+                writer.WriteElementString("Week", "1");
+                writer.WriteStartElement("town");
+                writer.WriteStartElement("barracks");
+                writer.WriteElementString("barracks_level", "0");
+                writer.WriteElementString("roster_level", "0");
+                writer.WriteEndElement();
+                writer.WriteEndElement();
                 writer.WriteEndElement();              
                 writer.WriteEndDocument();
                 writer.Flush();
@@ -41,5 +46,6 @@ namespace StormDugeon
                 Console.WriteLine(e.Message);
             }
         }
+
     }
 }

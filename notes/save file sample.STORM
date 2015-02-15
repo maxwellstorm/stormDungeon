@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<general>
+	<week>1</week>
+	<town>
+		<barracks>
+			<barracks level>0</barracks level>
+			<roster level>0</roster level>
+		</barracks>
+	</town>
+</general>
+<characters>
+	<hero>
+		<name>maxwellstorm</name>
+		<class>ranger</class>
+		<strength>5</strngth>
+	</hero>
+	<gaurdians>
+		<gaurdian name = "test">
+			<status>alive</status>
+			<class>barabrian</class>
+		</gaurdian>
+	</gaurdians>
+</characters>

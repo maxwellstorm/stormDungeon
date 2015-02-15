@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StormDugeon.Forms.UserControls;
-using System.Linq;
 using System.IO;
 
 namespace StormDugeon.Forms
@@ -35,13 +34,14 @@ namespace StormDugeon.Forms
                 List<NewLoadControl> controls = this.Controls.OfType<NewLoadControl>().OrderBy(name => name.Name).ToList();//order by name of control so will always come back in desired order for ordering save games
                 int count = 0;
                 string temp;
-                LoadFiles = Directory.GetFiles("SaveGames");
+                LoadFiles = Directory.GetFiles("SaveGames").OrderBy(name => name).ToArray();
                 foreach (NewLoadControl nlc in controls)
                 {
                         Console.WriteLine(nlc.Name);
                         temp = LoadFiles[count].Split('\\')[1];
                         temp = temp.Split('.')[0];
-                        nlc.TextBox.Text = temp;
+                        nlc.TextBox.Text = temp.Substring(1,temp.Length-1);
+                        nlc.start.Text = "Load";
                         count++;
                 }
             }
