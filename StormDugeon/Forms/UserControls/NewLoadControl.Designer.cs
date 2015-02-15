@@ -47,7 +47,7 @@
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(86, 23);
             this.start.TabIndex = 2;
-            this.start.Text = "start new";
+            this.start.Text = "Start New";
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
@@ -67,7 +67,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox TextBox;
-        private System.Windows.Forms.Button start;
+        public System.Windows.Forms.TextBox TextBox;
+        public System.Windows.Forms.Button start;
     }
 }

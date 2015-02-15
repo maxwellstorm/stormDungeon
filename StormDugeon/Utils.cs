@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.IO;
 
 namespace StormDugeon
 {
@@ -20,9 +21,11 @@ namespace StormDugeon
 
         public static void MakeNewGameFile(string FileName)//file name without extension
         {
-            string path = @"" + FileName + ".STORM"; //really is an xml file
+            string path = @"SaveGames/" + FileName + ".STORM"; //really is an xml file
             try
             {
+                if (!Directory.Exists("SaveGames"))
+                    Directory.CreateDirectory("SaveGames");
                 XmlWriter writer = XmlWriter.Create(path);
                 writer.WriteStartDocument();
                 writer.WriteStartElement("Employees");

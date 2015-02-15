@@ -49,7 +49,7 @@
             // newLoadControl1
             // 
             this.newLoadControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newLoadControl1.Location = new System.Drawing.Point(198, 80);
+            this.newLoadControl1.Location = new System.Drawing.Point(218, 60);
             this.newLoadControl1.Name = "newLoadControl1";
             this.newLoadControl1.Size = new System.Drawing.Size(356, 49);
             this.newLoadControl1.TabIndex = 9;
@@ -57,7 +57,7 @@
             // newLoadControl2
             // 
             this.newLoadControl2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newLoadControl2.Location = new System.Drawing.Point(198, 222);
+            this.newLoadControl2.Location = new System.Drawing.Point(218, 147);
             this.newLoadControl2.Name = "newLoadControl2";
             this.newLoadControl2.Size = new System.Drawing.Size(356, 49);
             this.newLoadControl2.TabIndex = 10;
@@ -65,7 +65,7 @@
             // newLoadControl3
             // 
             this.newLoadControl3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newLoadControl3.Location = new System.Drawing.Point(198, 149);
+            this.newLoadControl3.Location = new System.Drawing.Point(218, 221);
             this.newLoadControl3.Name = "newLoadControl3";
             this.newLoadControl3.Size = new System.Drawing.Size(356, 49);
             this.newLoadControl3.TabIndex = 11;
@@ -73,7 +73,7 @@
             // newLoadControl4
             // 
             this.newLoadControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newLoadControl4.Location = new System.Drawing.Point(198, 284);
+            this.newLoadControl4.Location = new System.Drawing.Point(218, 292);
             this.newLoadControl4.Name = "newLoadControl4";
             this.newLoadControl4.Size = new System.Drawing.Size(356, 49);
             this.newLoadControl4.TabIndex = 12;
@@ -93,6 +93,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Campaign";
             this.Text = "NewGame";
+            this.Load += new System.EventHandler(this.Campaign_Load);
             this.ResumeLayout(false);
 
         }

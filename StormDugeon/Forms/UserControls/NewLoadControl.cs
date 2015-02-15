@@ -12,20 +12,29 @@ namespace StormDugeon.Forms.UserControls
 {
     public partial class NewLoadControl : UserControl
     {
+        public ContainerForm cf;
         public NewLoadControl()
         {
             InitializeComponent();
+            
         }
 
         private void start_Click(object sender, EventArgs e)
         {
-            ContainerForm cf = (ContainerForm)this.ParentForm.MdiParent;
-            cf.StartNewGame("test");
+          
+            if (start.Text == "Start New")
+                if (TextBox.Text != "")
+                    cf.StartNewGame(TextBox.Text);
+                else
+                    MessageBox.Show("please enter desired game name");
+            else
+                cf.LoadGame(TextBox.Text);
         }
 
         private void NewLoadControl_Load(object sender, EventArgs e)
         {
-            TextBox.Text = "test";
+            cf = (ContainerForm)this.ParentForm.MdiParent;
+             
         }
 
         

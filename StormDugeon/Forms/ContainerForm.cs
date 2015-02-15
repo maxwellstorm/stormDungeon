@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StormDugeon;
+using System.IO;
 
 namespace StormDugeon.Forms
 {
     public partial class ContainerForm : Form
     {
+        public List<string> SavedGames;
         public ContainerForm()
         {
             InitializeComponent();
@@ -22,7 +24,7 @@ namespace StormDugeon.Forms
             sm.Show();
         }
 
-
+      
         public void StartNewGame(string GameName)
         {
             Utils.MakeNewGameFile(GameName);
