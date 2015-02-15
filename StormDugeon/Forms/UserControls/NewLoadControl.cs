@@ -26,11 +26,15 @@ namespace StormDugeon.Forms.UserControls
                 if (TextBox.Text != "")
                     cf.StartNewGame(this.Name.ToCharArray()[this.Name.Length - 1] + TextBox.Text);//ensure games will be in order of save
                 else
+                {
                     MessageBox.Show("please enter desired game name");
+                    return;
+                }
             else
             {
                 cf.LoadGame(this.Name.ToCharArray()[this.Name.Length - 1] + TextBox.Text);
             }
+            Utils.OpenForm(new InTown(), (Form)this.Parent);
         }
 
         private void NewLoadControl_Load(object sender, EventArgs e)

@@ -91,6 +91,12 @@
     <Compile Include="Forms\Campaign.Designer.cs">
       <DependentUpon>Campaign.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Menus\BarracksMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Menus\BarracksMenu.Designer.cs">
+      <DependentUpon>BarracksMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OptionsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     <EmbeddedResource Include="Forms\Campaign.resx">
       <DependentUpon>Campaign.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menus\BarracksMenu.resx">
+      <DependentUpon>BarracksMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\StartMenu.resx">
       <DependentUpon>StartMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +159,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -167,6 +177,12 @@
   <ItemGroup>
     <Folder Include="Armour\" />
     <Folder Include="Weapons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barracks.bmp" />
+    <Content Include="Town\Barracks\barracks.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

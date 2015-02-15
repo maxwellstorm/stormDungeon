@@ -16,5 +16,17 @@ namespace StormDugeon.Forms
         {
             InitializeComponent();
         }
+
+        private void Barracks_MouseEnter(object sender, EventArgs e)
+        {
+            this.Barracks.BorderStyle = BorderStyle.Fixed3D;
+            this.Barracks.BackColor = Color.Cyan;
+        }
+
+        private void Barracks_MouseLeave(object sender, EventArgs e)
+        {
+            this.Barracks.BorderStyle = BorderStyle.None;
+            this.Barracks.BackColor = Color.Chocolate;
+        }
     }
 }
